@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-11-14T02:03:40.711Z",
+  "nearAccountId": "minthunter.testnet",
+  "derivedEvmAddress": "0xBAE086017b4aA482b5264DBc37bC620aAB1a9DFE",
+  "hunts": [
+    {
+      "contract": "0x7bcc29c5405286b4dd8b5b23fe7097f9ee65e4e5",
+      "name": "Agentic (AGTC)",
+      "chainId": 56,
+      "verdict": "SAFE",
+      "reasons": [
+        "source verified",
+        "free mint confirmed (mintFree)",
+        "no drain patterns",
+        "owner 0x9e07f754116315298d8aaf3e24181de2907b4623 is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0xc5624b61bee1971e6aa3ab5f403236ab32c2b6cd",
+      "name": "TIME CARDS",
+      "chainId": 56,
+      "verdict": "SAFE",
+      "reasons": [
+        "source verified",
+        "free mint confirmed (claimFree)",
+        "no drain patterns",
+        "owner() unavailable — deployer check skipped (RPC eth_call failed: execution reverted: 0x)",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0xf9D00B7a2992de00EBc5F9f04BAf95d44C542102",
+      "name": "Pocket Ai NFT",
+      "chainId": 56,
+      "verdict": "SAFE",
+      "reasons": [
+        "source verified",
+        "free mint confirmed (mintFree)",
+        "no drain patterns",
+        "owner 0x9aab2a878f40323af113e5528afe74e4b21a0401 is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0xd24afeCEF683BB9E35d78e91ed4198bA9E59a233",
+      "name": "Drained wallet (EIP-7702 phishing test)",
+      "chainId": 56,
+      "verdict": "UNSAFE",
+      "reasons": [
+        "source not verified",
+        "owner() unavailable — deployer check skipped (RPC eth_call failed: execution reverted: 0x)",
+        "EIP-7702 delegation to 0x86e415756170ef48e0e9052b8a8a7bd4783a77ca (unknown delegate)"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0xb77d3495d3ed4427da78c9d0f7cb76c21c23d9fe",
+      "name": "MintRadar lead 1",
+      "chainId": 56,
+      "verdict": "SAFE",
+      "reasons": [
+        "source verified",
+        "free mint confirmed (mintFree)",
+        "no drain patterns",
+        "owner 0xec924b50da12043f0fd573d816d31dfed781e73a is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0x482a4bd1bcc01621601c6efde18ec6bec0dbcc11",
+      "name": "MintRadar lead 2",
+      "chainId": 56,
+      "verdict": "UNSAFE",
+      "reasons": [
+        "source not verified",
+        "owner 0xf5c6ee4d1b236ccbbc1f950255ea2deb0a09d77a is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0x2296367f74b2ec266cf4667d98501ae7110f5a58",
+      "name": "MintRadar lead 3",
+      "chainId": 56,
+      "verdict": "SAFE",
+      "reasons": [
+        "source verified",
+        "free mint confirmed (freeMint)",
+        "no drain patterns",
+        "owner 0xff4ec68049c8405152e107cf2163e80bc28837fd is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0x43462d7f269fde4914b03e1e07067a61b62b9540",
+      "name": "MintRadar lead 4",
+      "chainId": 56,
+      "verdict": "UNSAFE",
+      "reasons": [
+        "source verified",
+        "cannot confirm free mint (no free mint function found)",
+        "no drain patterns",
+        "owner 0xf962cf2efd37826be612c89873d2fe34d3bc019a is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    },
+    {
+      "contract": "0xd52fd117c4b47d03e4e16e778871f09faa5a024b",
+      "name": "MintRadar lead 5",
+      "chainId": 56,
+      "verdict": "UNSAFE",
+      "reasons": [
+        "source verified",
+        "cannot confirm free mint (no free mint function found)",
+        "no drain patterns",
+        "owner 0x81d7e653dbd0d13bae142bc8c334ace02e866c8d is not excluded",
+        "no delegation"
+      ],
+      "txHash": null,
+      "explorerUrl": null
+    }
+  ]
+}

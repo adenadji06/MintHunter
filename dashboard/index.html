@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MintHunter — Autonomous Free-Mint Hunter Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="logo-mark" aria-hidden="true">MH</div>
+      <div class="header-text">
+        <h1>MintHunter</h1>
+        <p class="subtitle">Autonomous free-mint hunter agent &mdash; NEAR Hackathon 2026, track: Agent Economy</p>
+        <p class="description">MintHunter hunts for free mints, verifies each contract for safety, and mints only the ones that pass &mdash; hunt &rarr; verify &rarr; mint.</p>
+      </div>
+      <div class="header-status" id="headerStatus">
+        <span class="status-dot status-dot--idle" id="statusDot"></span>
+        <span id="statusText">Waiting for data&hellip;</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Empty / error state: shown when data.json is missing or unreadable -->
+      <section class="empty-state" id="emptyState" hidden>
+        <h2>No hunt data yet</h2>
+        <p>No hunt data yet &mdash; run <code>node agent/run.js</code> first.</p>
+        <p class="empty-hint">The agent writes its results to <code>dashboard/data.json</code>. Refresh this page after the agent has run.</p>
+      </section>
+
+      <!-- Agent identity -->
+      <section class="card identity-card" id="identityCard" hidden>
+        <h2>Agent identity</h2>
+        <dl class="identity-list">
+          <div class="identity-row">
+            <dt>NEAR account</dt>
+            <dd class="mono" id="nearAccountId">&mdash;</dd>
+          </div>
+          <div class="identity-row">
+            <dt>Derived EVM address</dt>
+            <dd class="mono" id="derivedEvmAddress">&mdash;</dd>
+          </div>
+        </dl>
+        <p class="identity-note">The EVM address is derived from the NEAR account via chain signatures &mdash; one identity, usable across chains.</p>
+      </section>
+
+      <!-- Summary counts -->
+      <section class="stats" id="statsBar" hidden>
+        <div class="stat">
+          <span class="stat-value" id="statTotal">0</span>
+          <span class="stat-label">Hunts</span>
+        </div>
+        <div class="stat stat--safe">
+          <span class="stat-value" id="statSafe">0</span>
+          <span class="stat-label">Safe</span>
+        </div>
+        <div class="stat stat--unsafe">
+          <span class="stat-value" id="statUnsafe">0</span>
+          <span class="stat-label">Unsafe</span>
+        </div>
+        <div class="stat stat--minted">
+          <span class="stat-value" id="statMinted">0</span>
+          <span class="stat-label">Minted</span>
+        </div>
+      </section>
+
+      <!-- Hunt feed -->
+      <section id="huntFeedSection" hidden>
+        <h2 class="section-title">Hunt feed</h2>
+        <div class="hunt-feed" id="huntFeed"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Last updated: <span id="lastUpdated">&mdash;</span></p>
+      <p class="footer-demo">Demo only &mdash; testnet only, no real funds. MintHunter never spends real money and never mints a contract that fails verification.</p>
+    </footer>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
