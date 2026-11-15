@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T02:03:40.711Z",
+  "generatedAt": "2026-11-14T23:29:16.380Z",
   "nearAccountId": "minthunter.testnet",
   "derivedEvmAddress": "0xBAE086017b4aA482b5264DBc37bC620aAB1a9DFE",
   "hunts": [
@@ -62,50 +62,48 @@
       "explorerUrl": null
     },
     {
-      "contract": "0xb77d3495d3ed4427da78c9d0f7cb76c21c23d9fe",
+      "contract": "0xd4a038253d19e058a5653dff177f7f21fee59d52",
       "name": "MintRadar lead 1",
       "chainId": 56,
-      "verdict": "SAFE",
+      "verdict": "UNSAFE",
       "reasons": [
         "source verified",
-        "free mint confirmed (mintFree)",
+        "cannot confirm free mint (freeMint price is not provably zero)",
         "no drain patterns",
-        "owner 0xec924b50da12043f0fd573d816d31dfed781e73a is not excluded",
+        "owner 0xcbcadc7c9897d21fa6e3a8f941f9f271a39598e3 is not excluded",
         "no delegation"
       ],
       "txHash": null,
       "explorerUrl": null
     },
     {
-      "contract": "0x482a4bd1bcc01621601c6efde18ec6bec0dbcc11",
+      "contract": "0x898bb11bbff8c957a8b92a8ee880f3520235755b",
       "name": "MintRadar lead 2",
       "chainId": 56,
       "verdict": "UNSAFE",
       "reasons": [
         "source not verified",
-        "owner 0xf5c6ee4d1b236ccbbc1f950255ea2deb0a09d77a is not excluded",
+        "owner 0x6f98fac7332efe1b04e68b697c3d9c724b9eaeed is not excluded",
         "no delegation"
       ],
       "txHash": null,
       "explorerUrl": null
     },
     {
-      "contract": "0x2296367f74b2ec266cf4667d98501ae7110f5a58",
+      "contract": "0xa5aac50efd4961adcd281a769cd95240977a63a2",
       "name": "MintRadar lead 3",
       "chainId": 56,
-      "verdict": "SAFE",
+      "verdict": "UNSAFE",
       "reasons": [
-        "source verified",
-        "free mint confirmed (freeMint)",
-        "no drain patterns",
-        "owner 0xff4ec68049c8405152e107cf2163e80bc28837fd is not excluded",
+        "source not verified",
+        "owner 0x6f98fac7332efe1b04e68b697c3d9c724b9eaeed is not excluded",
         "no delegation"
       ],
       "txHash": null,
       "explorerUrl": null
     },
     {
-      "contract": "0x43462d7f269fde4914b03e1e07067a61b62b9540",
+      "contract": "0x4d0923060d6f657df4c2567b629e1c3ab8dbc5f5",
       "name": "MintRadar lead 4",
       "chainId": 56,
       "verdict": "UNSAFE",
@@ -113,14 +111,14 @@
         "source verified",
         "cannot confirm free mint (no free mint function found)",
         "no drain patterns",
-        "owner 0xf962cf2efd37826be612c89873d2fe34d3bc019a is not excluded",
+        "owner 0x7dc6f78ceea298db76569be4bec2ba1d2059705a is not excluded",
         "no delegation"
       ],
       "txHash": null,
       "explorerUrl": null
     },
     {
-      "contract": "0xd52fd117c4b47d03e4e16e778871f09faa5a024b",
+      "contract": "0x039b3ef0b895aca841da734103605bceec5da386",
       "name": "MintRadar lead 5",
       "chainId": 56,
       "verdict": "UNSAFE",
@@ -128,7 +126,7 @@
         "source verified",
         "cannot confirm free mint (no free mint function found)",
         "no drain patterns",
-        "owner 0x81d7e653dbd0d13bae142bc8c334ace02e866c8d is not excluded",
+        "owner 0x03f28765efba2606fd19755c0dad43218fe018e3 is not excluded",
         "no delegation"
       ],
       "txHash": null,

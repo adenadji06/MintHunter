@@ -54,6 +54,8 @@ Expected output: the agent hunts 9 candidates, verifies each, and reports 5 SAFE
 
 See [demo/DEMO.md](demo/DEMO.md) for the 2–3 minute judge walkthrough, including the EIP-7702 drained-wallet example.
 
+Watch the demo (34-second video, posted 2026-11-15): https://x.com/AirdropFlickers/status/2121748821923516448
+
 ## Configuration
 
 No configuration file and no secrets. The only values a user might change are in the source:

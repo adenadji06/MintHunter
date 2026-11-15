@@ -1,0 +1,21 @@
+{
+  "submitted_at_wib": "2026-11-15 06:35 WIB",
+  "http_status": 201,
+  "requestId": "afb4da6e-be0a-4e23-9f68-b52a7a7a591c",
+  "response_note": "userConfirmationRequired=true, userConfirmationStatus=approved",
+  "payload": {
+    "requestId": "afb4da6e-be0a-4e23-9f68-b52a7a7a591c",
+    "projectName": "MintHunter",
+    "leadName": "aden adji",
+    "email": "becaklarii@gmail.com",
+    "size": "1",
+    "tracks": [
+      "agents"
+    ],
+    "nearAddress": "160df0b17f7b56eae349ff4a67cda0cd8c6fd069f61e75e33c82f1990f78301c",
+    "projectUrl": "https://github.com/adenadji06/MintHunter",
+    "demoUrl": "https://x.com/AirdropFlickers/status/2121748821923516448",
+    "idea": "MintHunter is an autonomous agent that hunts free NFT mints, safety-checks each contract, and mints only the safe ones \u2014 without a human clicking. It finds candidates from curated lists and live on-chain feeds, then runs a 5-check safety gate: (1) Sourcify source verification, (2) free-mint confirmation, (3) deployer exclusion list, (4) EIP-7702 delegation check, (5) drain-pattern scan. The agent identity is a NEAR account; its EVM address is derived via NEAR chain signatures (MPC), and cross-chain execution uses NEAR Intents. The EIP-7702 check is personal: it flagged the phishing delegation that drained my own wallet. Built for the agents track \u2014 an agent that spends its own money must verify before it spends.",
+    "consent": true
+  }
+}
